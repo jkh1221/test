@@ -2,9 +2,8 @@
 
 This is written for installation and operation on “DApp For Sharing PDF on Smart Contract”
 ### 1.	Node Package Application Download And Installation
- - If you have not yet installed node application, do as following
-   aaa
-  (1)	Go to https://nodejs.org/en/download/ and Download
+ - If you have not yet installed node application, do as following \
+  (1)	Go to https://nodejs.org/en/download/ and Download \
   (2)	Install the downloaded msi as keeping default.
 
 ### 2.	Ganache Application Download , Installation and Configuration
