@@ -13,7 +13,7 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
   . Click “Setting” icon shown on top-right and Go to SERVER tab  
   . Change 7545 to 8545 on “PORT NUMBER”  
 
-### 3.	Metamask Chrome Extension Installation and Configuration
+### 3.	Metamask Chrome Extension Installation and Configuration  
 (1)	Run Google Chrome Browser ( You have to install it, if you don’t have )  
 (2)	Click “Setting” on the top-right of chrome browser and Go to “Extensions” menu as following  
  
