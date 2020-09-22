@@ -3,8 +3,8 @@
 This is written for installation and operation on “DApp For Sharing PDF on Smart Contract”
 ### 1.	Node Package Application Download And Installation
  - If you have not yet installed node application, do as following  
-  (1)	Go to https://nodejs.org/en/download/ and Download  
-  (2)	Install the downloaded msi as keeping default.
+  	 - Go to https://nodejs.org/en/download/ and Download  
+  	 - Install the downloaded msi as keeping default.
 
 ### 2.	Ganache Application Download , Installation and Configuration
   -	Go to https://www.trufflesuite.com/ganache and Download  
@@ -85,12 +85,12 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
  
 
 ### 8.	Change the project configuration for current dapp And Refresh Browser.
-  . copy the distributed contract’s address on remix deploy screen  
-  . change the “address” value  in  “storehash.js” of project and Save file  
+  - copy the distributed contract’s address on remix deploy screen  
+  - change the “address” value  in  “storehash.js” of project and Save file  
  
 
-  . copy the distributed contract’s ABI on remix compile screen  
-  . change the “abi” value  in  “storehash.js” of project and Save file  
+  - copy the distributed contract’s ABI on remix compile screen  
+  - change the “abi” value  in  “storehash.js” of project and Save file  
 
  
 
