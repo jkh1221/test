@@ -50,15 +50,15 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
 
 ### 5.	Unzip project source file (pdfsharingDApp.rar) and move to your own location.
 ### 6.	Installation Dependencies one by one on command prompt as following
-    `npm i create-react-app`  
-    `npm install react-scripts --save`  
-    `npm install react-bootstrap --save`  
-    `npm install fs-extra --save`  
-    `npm install ipfs-api --save`  
-    `npm install web3@^1.0.0-beta.26 --save`  
-    `npm install -g create-react-app`  
-    `yarn install`  
-    `yarn start`  
+  `npm i create-react-app`  
+  `npm install react-scripts --save`  
+  `npm install react-bootstrap --save`  
+  `npm install fs-extra --save`  
+  `npm install ipfs-api --save`  
+  `npm install web3@^1.0.0-beta.26 --save`  
+  `npm install -g create-react-app`  
+  `yarn install`  
+  `yarn start`  
 
   Now you can get that your web application runs on chrome browser.
 
