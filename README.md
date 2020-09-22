@@ -27,12 +27,12 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
  
 
   -	Import account from Ganache. (Because all transactions need gas for both of test and development, you have to make a deposited account)
-    . create account  
+    - create account  
  
 
 
 
-    . Go to “import” tab , Paste new account’s privatekey from Ganache and Click “import” button  
+    - Go to “import” tab , Paste new account’s privatekey from Ganache and Click “import” button  
 
 
 
@@ -45,20 +45,20 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
 
 
 ### 4.	Yarn Download and Installation
-(1)	Go to https://yarnpkg.com/lang/en/docs/install/#windows-stable And Click “Download Installer” button to download  
-(2)	Install “yarn-_.__.msi” file  
+  -	Go to https://yarnpkg.com/lang/en/docs/install/#windows-stable And Click “Download Installer” button to download  
+  -	Install “yarn-_.__.msi” file  
 
 ### 5.	Unzip project source file (pdfsharingDApp.rar) and move to your own location.
 ### 6.	Installation Dependencies one by one on command prompt as following
-  `npm i create-react-app`
-  npm install react-scripts --save
-  npm install react-bootstrap --save
-  npm install fs-extra --save
-  npm install ipfs-api --save
-  npm install web3@^1.0.0-beta.26 --save
-  npm install -g create-react-app
-  yarn install
-  yarn start
+  `npm i create-react-app`  
+  `npm install react-scripts --save`
+  `npm install react-bootstrap --save`
+  `npm install fs-extra --save`
+  `npm install ipfs-api --save`
+  `npm install web3@^1.0.0-beta.26 --save`
+  `npm install -g create-react-app`
+  `yarn install`
+  `yarn start`
 
   Now you can get that your web application runs on chrome browser.
 
