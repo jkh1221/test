@@ -2,6 +2,7 @@
 
 This is written for installation and operation on “DApp For Sharing PDF on Smart Contract”
 ### 1.	Node Package Application Download And Installation
+
  - If you have not yet installed node application, do as following  
   	 - Go to https://nodejs.org/en/download/ and Download  
   	 - Install the downloaded msi as keeping default.
@@ -45,6 +46,7 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
 
 
 ### 4.	Yarn Download and Installation
+
   -	Go to https://yarnpkg.com/lang/en/docs/install/#windows-stable And Click “Download Installer” button to download  
   -	Install “yarn-_.__.msi” file  
 
