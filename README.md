@@ -60,7 +60,7 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
       yarn install  
       yarn start  
 
-      Now you can get that your web application runs on chrome browser.
+   Now you can get that your web application runs on chrome browser.
 
 ### 7.	Distribution smartcontract on local blockchain network running on Ganache and Metamask.
   - Go to https://remix.ethereum.org/ and Click “Open files”  
