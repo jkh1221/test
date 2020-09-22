@@ -14,25 +14,25 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
     - Change 7545 to 8545 on “PORT NUMBER”  
 
 ### 3.	Metamask Chrome Extension Installation and Configuration  
-  (1).	Run Google Chrome Browser ( You have to install it, if you don’t have )  
-  (2)	Click “Setting” on the top-right of chrome browser and Go to “Extensions” menu as following  
+  -	Run Google Chrome Browser ( You have to install it, if you don’t have )  
+  -	Click “Setting” on the top-right of chrome browser and Go to “Extensions” menu as following  
  
-(3)	Type “Metamask” on seach box and Get “MetaMask …” shown as fox icon on screen  
-(4)	Click it and Install Extension  
-(5)	Now you can look “Fox” icon on Chrome Browser.  
-(6)	Click “Fox” icon on chrom browser to run it.  
-(7)	Create new account and Set your own password to login to blockchain network.  
-(8)	Select your favourite network there as following.  
-For example “Main Ethereum Network” for real network , “Localhost 8545” for development and test. In my case I did “Localhost 8545”  
- 
-
-(9)	Import account from Ganache. (Because all transactions need gas for both of test and development, you have to make a deposited account)
-. create account  
+  -	Type “Metamask” on seach box and Get “MetaMask …” shown as fox icon on screen  
+  -	Click it and Install Extension  
+  -	Now you can look “Fox” icon on Chrome Browser.  
+  -	Click “Fox” icon on chrom browser to run it.  
+  -	Create new account and Set your own password to login to blockchain network.  
+  -	Select your favourite network there as following.  
+    For example “Main Ethereum Network” for real network , “Localhost 8545” for development and test. In my case I did “Localhost 8545”  
  
 
+  -	Import account from Ganache. (Because all transactions need gas for both of test and development, you have to make a deposited account)
+    . create account  
+ 
 
 
-. Go to “import” tab , Paste new account’s privatekey from Ganache and Click “import” button  
+
+    . Go to “import” tab , Paste new account’s privatekey from Ganache and Click “import” button  
 
 
 
