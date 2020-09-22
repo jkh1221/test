@@ -1,18 +1,20 @@
+# Nightfall
+
 This is written for installation and operation on “DApp For Sharing PDF on Smart Contract”
-###1.	Node Package Application Download And Installation
+### 1.	Node Package Application Download And Installation
 -	If you have not yet installed node application, do as following
 (1)	Go to https://nodejs.org/en/download/ and Download
  
 (2)	Install the downloaded msi as keeping default.
 
-###2.	Ganache Application Download , Installation and Configuration
+### 2.	Ganache Application Download , Installation and Configuration
 (1)	Go to https://www.trufflesuite.com/ganache and Download
 (2)	Install the downloaded Ganache-2.1.2-win-x64.appx
 (3)	Run the app and Have Configuration as following ( set port at 8545)
 . Click “Setting” icon shown on top-right and Go to SERVER tab
 . Change 7545 to 8545 on “PORT NUMBER”
 
-###3.	Metamask Chrome Extension Installation and Configuration
+### 3.	Metamask Chrome Extension Installation and Configuration
 (1)	Run Google Chrome Browser ( You have to install it, if you don’t have )
 (2)	Click “Setting” on the top-right of chrome browser and Go to “Extensions” menu as following
  
@@ -43,12 +45,12 @@ For example “Main Ethereum Network” for real network , “Localhost 8545” 
 
 
 
-###4.	Yarn Download and Installation
+### 4.	Yarn Download and Installation
 (1)	Go to https://yarnpkg.com/lang/en/docs/install/#windows-stable And Click “Download Installer” button to download
 (2)	Install “yarn-_.__.msi” file
 
-###5.	Unzip project source file (pdfsharingDApp.rar) and move to your own location.
-###6.	Installation Dependencies one by one on command prompt as following
+### 5.	Unzip project source file (pdfsharingDApp.rar) and move to your own location.
+### 6.	Installation Dependencies one by one on command prompt as following
 npm i create-react-app
 npm install react-scripts --save
 npm install react-bootstrap --save
@@ -61,7 +63,7 @@ yarn start
 
 Now you can get that your web application runs on chrome browser.
 
-###7.	Distribution smartcontract on local blockchain network running on Ganache and Metamask.
+### 7.	Distribution smartcontract on local blockchain network running on Ganache and Metamask.
 . Go to https://remix.ethereum.org/ and Click “Open files”
 . On “file open dialog”, Select to  “{your location}\pdfsharingDApp\src\contracts\StoreHash.sol”
 . Click “compile ___” 
@@ -83,7 +85,7 @@ Paste the following line by line on input box beside “Add Acount” button And
 
  
 
-###8.	Change the project configuration for current dapp And Refresh Browser.
+### 8.	Change the project configuration for current dapp And Refresh Browser.
 . copy the distributed contract’s address on remix deploy screen
 . change the “address” value  in  “storehash.js” of project and Save file
  
@@ -93,7 +95,7 @@ Paste the following line by line on input box beside “Add Acount” button And
 
  
 
-###9.	Refresh Browser to press “F5” key on keyboard
+### 9.	Refresh Browser to press “F5” key on keyboard
 
 That’s all And Thanks 
 
