@@ -7,11 +7,11 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
   (2)	Install the downloaded msi as keeping default.
 
 ### 2.	Ganache Application Download , Installation and Configuration
- (1)	Go to https://www.trufflesuite.com/ganache and Download  
- (2)	Install the downloaded Ganache-2.1.2-win-x64.appx  
- (3)	Run the app and Have Configuration as following ( set port at 8545)  
-  . Click “Setting” icon shown on top-right and Go to SERVER tab  
-  . Change 7545 to 8545 on “PORT NUMBER”  
+  -	Go to https://www.trufflesuite.com/ganache and Download  
+  -	Install the downloaded Ganache-2.1.2-win-x64.appx  
+  -	Run the app and Have Configuration as following ( set port at 8545)  
+   - Click “Setting” icon shown on top-right and Go to SERVER tab  
+   - Change 7545 to 8545 on “PORT NUMBER”  
 
 ### 3.	Metamask Chrome Extension Installation and Configuration  
 (1)	Run Google Chrome Browser ( You have to install it, if you don’t have )  
