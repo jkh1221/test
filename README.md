@@ -60,27 +60,27 @@ This is written for installation and operation on “DApp For Sharing PDF on Sma
       yarn install  
       yarn start  
 
-  Now you can get that your web application runs on chrome browser.
+      Now you can get that your web application runs on chrome browser.
 
 ### 7.	Distribution smartcontract on local blockchain network running on Ganache and Metamask.
-  . Go to https://remix.ethereum.org/ and Click “Open files”  
-  . On “file open dialog”, Select to  “{your location}\pdfsharingDApp\src\contracts\StoreHash.sol”  
-  . Click “compile ___”  
+  - Go to https://remix.ethereum.org/ and Click “Open files”  
+  - On “file open dialog”, Select to  “{your location}\pdfsharingDApp\src\contracts\StoreHash.sol”  
+  - Click “compile ___”  
   
-  . Go to “DEPLOY & RUN TRANSACTIONS” tab and Select “Web3 Provider” on Environment selectbox  
+  - Go to “DEPLOY & RUN TRANSACTIONS” tab and Select “Web3 Provider” on Environment selectbox  
     Now you can get an account list created above 3.9 on Metamask  
  
 
-  . Deploy the app  
-  . Initialize your smartcontract app to add some accounts  
-    Paste the following line by line on input box beside “Add Acount” button And Click “Add Acount” button each time.  
-    0x89C80bA6C09048BE832C129Ad3b65d144289cA16, hattori, 1df7deb64b2712f0d2a2161953d2836d1f7fd6b645c8c94f47a5a6faa48cd31f  
+  - Deploy the app  
+  - Initialize your smartcontract app to add some accounts  
+     Paste the following line by line on input box beside “Add Acount” button And Click “Add Acount” button each time.  
+     0x89C80bA6C09048BE832C129Ad3b65d144289cA16, hattori, 1df7deb64b2712f0d2a2161953d2836d1f7fd6b645c8c94f47a5a6faa48cd31f  
 
-    0x2FDb91Da9A591786373852CdDbb001C0FF30D0c3, andrew, 68d70d478f330c34ff617355247f54695c3c1d370aa4d3a23608562d5262aa78  
+     0x2FDb91Da9A591786373852CdDbb001C0FF30D0c3, andrew, 68d70d478f330c34ff617355247f54695c3c1d370aa4d3a23608562d5262aa78  
 
-    0xddAe99490C4C736d6AE7De5fCa30051F22A1ACd8, seito, 4d1f017426b1d9a970af29859559845a09fd1a3455a1feac0ace027c49b8f817  
+     0xddAe99490C4C736d6AE7De5fCa30051F22A1ACd8, seito, 4d1f017426b1d9a970af29859559845a09fd1a3455a1feac0ace027c49b8f817  
 
-    0xD2BE7f3dCd66AFFf6114087B58556a25E2b065C6, pablo, c6db29471742c1f116fff5ef5c9bc1336ef598b359c40933b11a5bb42a9d89e6  
+     0xD2BE7f3dCd66AFFf6114087B58556a25E2b065C6, pablo, c6db29471742c1f116fff5ef5c9bc1336ef598b359c40933b11a5bb42a9d89e6  
 
  
 
