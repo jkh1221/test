@@ -1,104 +1,82 @@
-# Installation and Operation on “DApp For Sharing PDF on Smart Contract”
+# WALLET API
 
-This is written for installation and operation on “DApp For Sharing PDF on Smart Contract”
-### 1.	Node Package Application Download And Installation
+This project contains source code and supporting files for a serverless application that you can deploy with the AWS Serverless Application Model (AWS SAM) command line interface (CLI). It includes the following files and folders:
 
- - If you have not yet installed node application, do as following  
-  	 - Go to https://nodejs.org/en/download/ and Download  
-    ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/node.PNG)  
-  	 - Install the downloaded msi as keeping default.  
+- `src` - Code for the application's Lambda function.
+- `events` - Invocation events that you can use to invoke the function.
+- `template.yml` - A template that defines the application's AWS resources.
 
-### 2.	Ganache Application Download , Installation and Configuration
-  -	Go to https://www.trufflesuite.com/ganache and Download  
-  -	Install the downloaded Ganache-2.1.2-win-x64.appx  
-  -	Run the app and Have Configuration as following ( set port at 8545)  
-    - Click “Setting” icon shown on top-right and Go to SERVER tab  
-    - Change 7545 to 8545 on “PORT NUMBER”  
+The application uses several AWS resources, including Lambda functions, an API Gateway API, and Amazon DynamoDB tables. These resources are defined in the `template.yml` file in this project. You can update the template to add AWS resources through the same deployment process that updates your application code.
 
-### 3.	Metamask Chrome Extension Installation and Configuration  
-  -	Run Google Chrome Browser ( You have to install it, if you don’t have )  
-  -	Click “Setting” on the top-right of chrome browser and Go to “Extensions” menu as following  
-  
-     ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/meta1.PNG)  
-     
-  -	Type “Metamask” on seach box and Get “MetaMask …” shown as fox icon on screen  
-  -	Click it and Install Extension  
-  -	Now you can look “Fox” icon on Chrome Browser.  
-  -	Click “Fox” icon on chrom browser to run it.  
-  -	Create new account and Set your own password to login to blockchain network.  
-  -	Select your favourite network there as following.  
-    For example “Main Ethereum Network” for real network , “Localhost 8545” for development and test. In my case I did “Localhost 8545”  
- 
-      ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/meta2.PNG)  
+If you prefer to use an integrated development environment (IDE) to build and test your application, you can use the AWS Toolkit.  
+The AWS Toolkit is an open-source plugin for popular IDEs that uses the AWS SAM CLI to build and deploy serverless applications on AWS. The AWS Toolkit also adds step-through debugging for Lambda function code. 
 
-  -	Import account from Ganache. (Because all transactions need gas for both of test and development, you have to make a deposited account)
-    - create account  
- 
-     ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/meta3.PNG)  
+To get started, see the following:
 
+* [PyCharm](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/welcome.html)
+* [IntelliJ](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/welcome.html)
+* [VS Code](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/welcome.html)
+* [Visual Studio](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/welcome.html)
 
-    - Go to “import” tab , Paste new account’s privatekey from Ganache and Click “import” button  
+## Deploy the iouapi application
 
-     ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/meta4.PNG)  
+The AWS SAM CLI is an extension of the AWS CLI that adds functionality for building and testing Lambda applications. It uses Docker to run your functions in an Amazon Linux environment that matches Lambda. It can also emulate your application's build environment and API.
 
-### 4.	Yarn Download and Installation
+To use the AWS SAM CLI, you need the following tools:
 
-  -	Go to https://yarnpkg.com/lang/en/docs/install/#windows-stable And Click “Download Installer” button to download  
-  -	Install “yarn-_.__.msi” file  
+* AWS SAM CLI - [Install the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html).
+* Node.js - [Install Node.js 12](https://nodejs.org/en/), including the npm package management tool.
+* Docker - [Install Docker community edition](https://hub.docker.com/search/?type=edition&offering=community).
 
-### 5.	Unzip project source file (pdfsharingDApp.rar) and move to your own location.
-### 6.	Installation Dependencies one by one on command prompt as following
-      npm i create-react-app  
-      npm install react-scripts --save  
-      npm install react-bootstrap --save  
-      npm install fs-extra --save  
-      npm install ipfs-api --save  
-      npm install web3@^1.0.0-beta.26 --save  
-      npm install -g create-react-app  
-      yarn install  
-      yarn start  
+To build and deploy your application for the first time, run the following in your shell:
 
-   Now you can get that your web application runs on chrome browser.
+```bash
+sam build
+sam deploy --guided
+```
 
-### 7.	Distribution smartcontract on local blockchain network running on Ganache and Metamask.
-  - Go to https://remix.ethereum.org/ and Click “Open files”  
-  - On “file open dialog”, Select to  “{your location}\pdfsharingDApp\src\contracts\StoreHash.sol”  
-  - Click “compile ___”  
-  
-       ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/remix1.PNG)  
-  
-  - Go to “DEPLOY & RUN TRANSACTIONS” tab and Select “Web3 Provider” on Environment selectbox  
-    Now you can get an account list created above 3.9 on Metamask 
-    
-      ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/remix2.PNG)  
+The first command will build the source of your application. The second command will package and deploy your application to AWS, with a series of prompts:
 
-  - Deploy the app  
-  - Initialize your smartcontract app to add some accounts  
-     Paste the following line by line on input box beside “Add Acount” button And Click “Add Acount” button each time.  
-     0x89C80bA6C09048BE832C129Ad3b65d144289cA16, hattori, 1df7deb64b2712f0d2a2161953d2836d1f7fd6b645c8c94f47a5a6faa48cd31f  
+* **Stack Name**: The name of the stack to deploy to CloudFormation. This should be unique to your account and region, and a good starting point would be something matching your project name.
+* **AWS Region**: The AWS region you want to deploy your app to.
+* **Confirm changes before deploy**: If set to yes, any change sets will be shown to you before execution for manual review. If set to no, the AWS SAM CLI will automatically deploy application changes.
+* **Allow SAM CLI IAM role creation**: Many AWS SAM templates, including this example, create AWS IAM roles required for the AWS Lambda function(s) included to access AWS services. By default, these are scoped down to minimum required permissions. To deploy an AWS CloudFormation stack which creates or modified IAM roles, the `CAPABILITY_IAM` value for `capabilities` must be provided. If permission isn't provided through this prompt, to deploy this example you must explicitly pass `--capabilities CAPABILITY_IAM` to the `sam deploy` command.
+* **Save arguments to samconfig.toml**: If set to yes, your choices will be saved to a configuration file inside the project, so that in the future you can just re-run `sam deploy` without parameters to deploy changes to your application.
 
-     0x2FDb91Da9A591786373852CdDbb001C0FF30D0c3, andrew, 68d70d478f330c34ff617355247f54695c3c1d370aa4d3a23608562d5262aa78  
+The API Gateway endpoint API will be displayed in the outputs when the deployment is complete.
 
-     0xddAe99490C4C736d6AE7De5fCa30051F22A1ACd8, seito, 4d1f017426b1d9a970af29859559845a09fd1a3455a1feac0ace027c49b8f817  
+## Use the AWS SAM CLI to build
 
-     0xD2BE7f3dCd66AFFf6114087B58556a25E2b065C6, pablo, c6db29471742c1f116fff5ef5c9bc1336ef598b359c40933b11a5bb42a9d89e6  
+Build your application by using the `sam build` command.
 
-     ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/accounts.PNG)  
- 
+```bash
+my-application$ sam build
+```
 
-### 8.	Change the project configuration for current dapp And Refresh Browser.
-  - copy the distributed contract’s address on remix deploy screen  
-  - change the “address” value  in  “storehash.js” of project and Save file  
- 
-      ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/config.PNG)  
+The AWS SAM CLI installs dependencies that are defined in `package.json`, creates a deployment package, and saves it in the `.aws-sam/build` folder.
 
-  - copy the distributed contract’s ABI on remix compile screen  
-  - change the “abi” value  in  “storehash.js” of project and Save file  
+Test a single function by invoking it directly with a test event. An event is a JSON document that represents the input that the function receives from the event source. Test events are included in the `events` folder in this project.
 
-     ![Image of Yaktocat](https://github.com/jkh1221/images/blob/master/readme/remix3.PNG)  
- 
+Deploy the updated application.
 
-### 9.	Refresh Browser to press “F5” key on keyboard
+```bash
+my-application$ sam deploy
+```
 
-That’s all And Thanks 
+Open the [**Applications**](https://console.aws.amazon.com/lambda/home#/applications) page of the Lambda console, and choose your application. When the deployment completes, view the application resources on the **Overview** tab to see the new resource. Then, choose the function to see the updated configuration that specifies the dead-letter queue.
 
+## Cleanup
+
+To delete the sample application that you created, use the AWS CLI. Assuming you used your project name for the stack name, you can run the following:
+
+```bash
+aws cloudformation delete-stack --stack-name iouapi
+```
+
+## Resources
+
+For an introduction to how to use the WALLET API, see the [WALLET API documentation](https://documenter.getpostman.com/view/12842968/TVRn4nMF).
+
+For an introduction to the AWS SAM specification, the AWS SAM CLI, and serverless application concepts, see the [AWS SAM Developer Guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html).
+
+Next, you can use the AWS Serverless Application Repository to deploy ready-to-use apps that go beyond Hello World samples and learn how authors developed their applications. For more information, see the [AWS Serverless Application Repository main page](https://aws.amazon.com/serverless/serverlessrepo/) and the [AWS Serverless Application Repository Developer Guide](https://docs.aws.amazon.com/serverlessrepo/latest/devguide/what-is-serverlessrepo.html).
